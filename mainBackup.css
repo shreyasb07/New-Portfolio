@@ -1,0 +1,661 @@
+* {
+    margin:0;
+    padding:0;
+   /* font-family: Tahoma;*/
+    box-sizing:border-box;
+    -o-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+  }
+  main{
+      height: 100vh;
+  }
+
+body
+{
+    background-color: #fff;
+    font-family: sans-serif;
+}
+blockquote 
+{
+	border-left: 5px solid #795548;
+	color: #795548;
+	font-size: 125%;
+	font-weight: 400;
+	margin: 20px 40px;
+    padding-left: 1.5rem;
+    display: block;
+    
+}
+
+
+nav{
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    line-height: 20px;
+    float: right;
+    background: rgba(249, 248, 244, 0.9);
+    display: block;
+    box-sizing: border-box;
+    position: relative;
+    font-weight: 100;
+    z-index: 20;
+}
+
+ul
+{
+    margin: 10px;
+    padding: 0;
+    display: flex;
+    float: right;
+}
+
+ul li
+{
+    list-style: none;
+    padding: 10px;
+}
+
+ul li a
+{ 
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(94, 90, 90);
+    position: relative;
+    padding: 5px;
+}
+
+ul li a:hover
+{
+   color:#00BCD4;
+}
+
+ul li a span:first-child::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    border-top: 2px solid #00BCD4;
+    border-left: 2px solid #00BCD4;
+    transition: 0.2s;
+    opacity: 0;
+}
+
+ul li a span:first-child::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    border-top: 2px solid #00BCD4;
+    border-right: 2px solid #00BCD4;
+    transition: 0.2s;
+    opacity: 0;
+}
+
+ul li a span:last-child:before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    border-bottom: 2px solid#00BCD4;
+    border-left: 2px solid #00BCD4;
+    transition: 0.2s;
+    opacity: 0;
+}
+
+ul li a span:last-child:after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    border-bottom: 2px solid#00BCD4;
+    border-right: 2px solid #00BCD4;
+    transition: 0.2s;
+    opacity: 0;
+}
+
+
+ul li a:hover span:first-child::before
+{
+    top: -10px;
+    left: -10px;
+    opacity: 1;
+}
+
+
+ul li a:hover span:first-child::after
+{
+    top: -10px;
+    right: -10px;
+    opacity: 1;
+}
+
+ul li a:hover span:last-child::before
+{
+    bottom: -10px;
+    left: -10px;
+    opacity: 1;
+}
+
+
+ul li a:hover span:last-child::after
+{
+    bottom: -10px;
+    right: -10px;
+    opacity: 1;
+}
+
+/*
+nav ul > li 
+{
+    padding: 15px; 
+    transition: all .3s ease;
+    margin-left: -5px;  
+    margin-right: 10px;
+    float: right;
+}
+
+*/
+
+.container
+{   
+    position: relative;
+    margin: 0;  
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    
+}
+
+
+
+.container ul li
+{
+    list-style: none;
+    padding: 10px 20px;
+    font-size: 2em;
+    color: #00BCD4;
+    z-index: 30;
+}
+.container ul li:hover
+{
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.container .social
+{
+    position: absolute;
+    padding: 0;
+    left: 15px;
+    z-index: 30;
+
+}
+
+.container .actions
+{
+    position: absolute;
+    padding: 0;
+    right: 15px;
+    z-index: 30;
+}
+
+.container .actions ul li
+{
+    list-style: none;
+    padding: 10px 20px;
+    font-size: 2em;
+    color: #00BCD4;
+    z-index: 30;
+}
+.container .actions ul li:hover
+{
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+
+
+
+.wrapper
+{
+    position: absolute;
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    min-height: 100%; 
+    background-size: cover; 
+    background-image: url(bg1.jpg);
+}
+/*
+.wrapper
+{
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+*/
+.overlay
+{
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ z-index: 10;
+ background-color: rgba(0, 0, 0, 0.8);
+ 
+}
+
+.intro {
+    padding-top: 10px;
+    padding-left: 10px; 
+    left: 20px;
+    top: 20px;
+    width: 100%;
+    z-index: 20;
+}
+
+
+.intro .headline 
+{
+    position: absolute;
+    font-family: 'Titan One', cursive;
+    font-size: 70px;
+    padding: 10px;
+    top: 40%;
+    left: 15%;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #00BCD4;
+    z-index: 20;
+
+}
+
+.intro h1:hover
+{
+    color: #fff;
+}
+
+.section
+{
+    padding-bottom: 0;
+    padding-top: 0;
+    display: block;
+    box-sizing: border-box;
+    height: auto;
+}
+
+
+
+
+.intro-container
+{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 55%;
+}
+
+.intro-container h2
+{
+    margin: 0;
+    padding: 0;
+    font-size: 3.56rem;
+    
+}
+
+#intro.section
+{
+    background-image: url(about-section.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+}
+
+
+
+.teal
+{
+    background-color: #008073;
+}
+
+.white-text
+{
+    color: #fff;
+}
+
+#intro.section .intro-container
+{
+    color: #fff;
+    font-weight: 200;
+	left: 520px;
+    position: absolute;
+    padding: 2px;
+    top: 50%;
+    z-index: 20;
+}
+
+#intro.section .intro-container *:not(span)
+{
+    font-weight: 300;
+    line-height: 150%;
+    padding: 0 30px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+#intro.section .teal
+{
+    padding: 0 10px;
+}
+
+#intro.section .underline 
+{
+	border-bottom: 5px solid #009688;
+}
+
+
+
+#about .section 
+{
+    padding-bottom: 30px;
+    padding-top: 0;
+    position: absolute;
+    line-height: 24px;
+    display: block;
+    box-sizing: border-box;
+}
+
+
+.page-title
+{
+    margin: 0;
+    padding: 20px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    top: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.teal-text {
+	color: #008073 !important
+}
+
+
+.about-page
+{
+    margin: 0;
+    padding: 5px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.about-page p
+{
+    margin: 20px;
+    padding: 10px;
+    font-size: 1.5em;
+
+}
+#experience .section 
+{
+    padding-bottom: 30px;
+    padding-top: 0;
+    position: absolute;
+    line-height: 24px;
+    display: block;
+    box-sizing: border-box;
+    height: 200px;  
+}
+
+#about .section 
+{
+    padding-bottom: 0;
+    padding-top: 0;
+    position: relative;
+    line-height: 24px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.exp-container
+{   
+    position: relative;
+    margin: 0;  
+    padding-bottom: 40px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;  
+}
+
+#video-background {
+    /*  making the video fullscreen  */
+      position: fixed;
+      right: 0; 
+      bottom: 0;
+      min-width: 100%; 
+      min-height: 100%;
+      width: auto; 
+      height: auto;
+      z-index: -100;
+    }
+
+.experience-page
+{
+    margin: 10px;
+    padding: 10px;
+    margin-top: 40px;
+    width: 60%;
+    height: 100vh;
+    background-color: rgba(249, 248, 244, 0.9);
+    position: relative;
+    border-radius: 5%;
+}
+.experience-page .company-details
+{
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+    height: auto;
+    background-color:rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: block;
+    border-radius: 5%;
+}
+.company-name
+{
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+}
+
+.role
+{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #262626;
+}
+
+.skills-container
+{   
+    position: relative;
+    margin: 0;  
+    padding-bottom: 40px;
+    width: 100%;
+    height: 100%;
+    background: #262626;
+    display: flex;  
+}
+
+.skills-text p
+{
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    width: 50%;
+    height: auto;
+    color: #fff;
+}
+
+canvas{
+    margin: 20px;
+    padding: 10px;
+    position: relative;
+    width: 400px;
+    right: 100px;
+    height: 400px;;
+    background: #262626;
+}
+
+.projects-container
+{   
+    position: relative;
+    margin: 0;  
+    padding-bottom: 40px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;  
+}
+
+.projects-container .row
+{
+    margin: 10px;
+    padding: 10px;
+    margin-top: 40px;
+    width: 100%;
+    top: 50%;
+    height: 100%;
+    background-color: rgba(249, 248, 244, 0.9);
+    position: relative;
+    
+}
+
+.column
+{
+    float: left;
+    position: relative;
+    width: 30%;
+    margin: 21px;
+    padding: 0;
+    height: 300px;
+    background-color: #fff;
+}
+
+.testimonials-container
+{   
+    position: relative;
+    margin: 0;  
+    padding-bottom: 40px;
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;  
+}
+
+.testimonials-page
+{
+    margin: 35px;
+    padding: 15px;
+    margin-top: 40px;
+    width: 70%;
+    height: auto;
+    top: 20px;
+    background-color: rgba(249, 248, 244, 0.9);
+    position: relative;
+    border-radius: 5%;
+    display: block;
+}
+
+.circle{
+    margin:auto;
+    position: relative;
+    height:150px;
+    width:150px;
+    border-radius:50%;
+    border:3px solid white;
+    left:0;
+    
+    top: -40px;
+    background:rgb(177, 170, 170);
+}
+
+/* Maps-section */
+
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #008073;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.map-container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.map-column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.map-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .map-column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}

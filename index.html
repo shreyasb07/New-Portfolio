@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Shreyas Bhosale</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>    
+    <script src="jquery.tagcanvas.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      if( ! $('#myCanvas').tagcanvas({
+        textColour : '#00BCD4',
+        outlineThickness : 0.5,
+        outlineColour : '#fe0853',
+                maxSpeed : 0.06,
+                freezeActive:true,
+                shuffleTags:true,
+                shape:'sphere',
+                zoom:1,
+                noSelect:true,
+                textFont:null,
+                pinchZoom:true,
+                freezeDecel:true,
+                fadeIn:3000,
+                initial: [0.3,-0.1],
+                depth : 0.8
+      })) {
+        // TagCanvas failed to load
+        $('#myCanvasContainer').hide();
+      }
+      // your other jQuery stuff here...
+    });
+    </script>
+</head>
+<body>
+    <main>
+            
+        <div class="main-container">
+            
+                <video autoplay loop id="video-background"  muted plays-inline>
+                        <source src="bgvideo.mp4" type="video/mp4">
+                </video>
+            
+                
+            <div class="header-tabs">
+
+                    <div class="social">
+                            <ul>
+                                <li><a href="#"></a><i class="fab fa-linkedin-in"></i></li>
+                                <li><a href="#"></a><i class="fab fa-github-alt"></i></li>
+                            </ul>
+                    </div>
+                    
+                    <div class="actions">
+                        <ul>
+                            <li><a href="#"></a><i class="fas fa-paper-plane"></i></li>
+                            <li><a href="#"></a><i class="fas fa-download"></i></li>
+                        </ul>
+                        
+                    </div>
+            </div>
+            <div class="overlay"></div>
+            <div class="landing-text-container">
+                <h1 class="headline line anim-typewriter">LET'S BUILD SOMETHING <br>
+                    AMAZING TOGETHER!</h1>
+                    <p class="line anim-typewriter">
+                            <i class="fas fa-angle-double-down"><a href="nav"></a></i>
+                    </p>
+                    
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">About <span><i class="fas fa-user"></i></span><span></span></a></li>
+                <li><a href="#">Education <span><i class="fas fa-user-graduate"></i></span><span></span></a></li>
+                <li><a href="#">Experiences <span><i class="fas fa-chart-line"></i></span><span></span></a></li>
+                <li><a href="#">Skills <span><i class="fas fa-cogs"></i></span><span></span></a></li>
+                <li><a href="#">Testimonials <span><i class="fas fa-comments"></i></span><span></span></a></li>
+                <li><a href="#">Projects <span><i class="fas fa-folder-open"></i></span><span></span></a></li>
+                <li><a href="#">Contact <span><i class="fas fa-envelope"></i></span><span></span></a></li>
+            </ul>
+        </nav>
+
+        <section id="intro" class="section">
+            <div class="overlay"></div>
+            <div class="intro-container">
+                <h2>
+                    "I want to 
+                    <span class="teal">make things</span>
+                    <br>
+                    that 
+                    <span class="underline">make a difference"</span>
+                </h2>
+            </div>
+        </section>
+        <section id="about" class="section scrollspy">
+            <h3 class="page-title white-text teal">About</h3>
+            <div class="about-page">
+                <div class="about-overlay">
+                <blockquote>
+                    <h2>Mission-driven full stack developer 
+                        with a passion for thoughtful UI design,
+                         collaboration, and development.</h2>
+                </blockquote>
+                <p>I’ve always sought out opportunities and challenges that are meaningful to me.
+                Although my professional path has taken many twists and turns — from touring and recording artist, to employee of the year at a non-profit, 
+                to dean's scholar at UPenn, to small business owner and entrepreneur
+                 — I've never stopped engaging my passion to help others and solve problems.</p>
+                <p>As a web developer, I enjoy using my obsessive attention to detail, my unequivocal love for making things, 
+                    and my mission-driven work ethic to literally change the world. 
+                    That's why I’m excited to make a big impact at a high growth company.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section scrollspy">
+
+            <h3 class="page-title white-text teal">Experience</h3>
+            <div class="exp-container">
+                    
+                
+                <div class="experience-page">
+                        <div class="company-details">                            
+                            <h1 class="teal-text company-name">California State University, Fullerton</h2>
+                            <h4 class="role">Graduate Student Assistant <br>
+                            Dec 2017 - May 2018 </h4>
+                            </span>
+                            <div class="exp-desc">
+                                <ul>
+                                    <li>Working with e-Services Team have been involved in not only enhancing the online sales, but also enhancing the website of the
+                                    University Store (Titan Shops) using HTML and JavaScript</li>
+                                    <br>
+                                    <li>Improved average application load time by 30%</li>
+                                    <br>
+                                    <li>Automated inventory processes by handling inventory data on MBS Insite (CMS) using JSON, XML, JSP, and jQuery</li>
+                                    <br>
+                                    <hr>
+                                </ul>
+
+                            </div>
+                        </div>
+                </div>
+                <div class="experience-page">
+                        <div class="company-details">
+                                <h1 class="teal-text company-name">California State University, Fullerton</h2>
+                                <h4 class="role">Student IT Consultant <br>
+                                Dec 2016 - May 2017 </h4>
+                                </span>
+                                <div class="exp-desc">
+                                        <ul>
+                                            <li>Provided hardware, software, and network technical assistance to faculty and students</li>
+                                            <br>
+                                            <li>Assisted with improved system performance, inventory management, documentation, in a detail-oriented, timely manner</li>
+                                            <br>
+                                            <li>Managed intranet and lab using strong hardware, software, and network troubleshooting skills</li>
+                                            <br>
+                                            <hr>
+                                        </ul>
+        
+                                    </div>
+                            </div>
+                </div>
+                <div class="experience-page">
+                        <div class="company-details">
+                                <h1 class="teal-text company-name">Accenture, Mumbai</h2>
+                                <h4 class="role">Software Engineer <br>
+                                March 2015 - Jul 2016 </h4>
+                                </span>
+                                <div class="exp-desc">
+                                        <ul>
+                                            <li>Financial industry experience, with banking foundation understanding</li>
+                                            <br>
+                                            <li>Developed end-to-end projects, Paperless Initiative, Automation of Volume Monitoring Report Generation, Bonus Reversals</li>
+                                            <br>
+                                            <li>Designed databases in DB2, of merchant details for a credit card company, to analyze transactions and delivered quality code</li>
+                                            <br>
+                                            <li>Resolved complex SEV1 issues by implementing innovative solutions, reducing further business impact on production systems</li>
+                                            <br>
+                                            <li>Architected multiple automation tools improving SLA by 25 %, trusted to collaborate with onsite, offsite, cross-platform teams</li>
+                                            <br>
+                                            <li>Modified existing code, performed unit testing, functional testing, and provided test support for SIT and UAT testing</li>
+                                            <br>
+                                            <li>Experienced working in Agile Methodology using Scrum and Test-driven Development(TDD)</li>
+                                            <br>
+                                            <hr>
+                                        </ul>
+        
+                                    </div>
+                        </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="skills" class="section scrollspy">
+                <h3 class="page-title white-text teal">Skills</h3>
+                <div class="skills-container">
+                    <div class="skills-text">
+                        <p>
+                            Main area of my expertise is front end development 
+                            and everything related with this side of web.&nbsp; &nbsp;HTML,CSS, JS
+                            (ES5,ES6), building small &amp; 
+                            medium Web Apps, Angular , Vue.js, building custom plugins, 
+                            features, animations and just coding layouts." Main area
+                            of my expertise is front end development
+                             and everything related with this side of web. HTML,CSS,
+                             JS (ES5,ES6), building small &amp;
+                             medium Web
+                             Apps, Angular , Vue.js, building custom
+                             plugins, features, animations and just coding layouts.
+                        </p>
+
+                        <p>
+                            Often I work as a Full-stack developer - mainly on MERN stack, and 
+                            open source CMS's like (Wordpress, Drupal, Magneto etc..)
+                        </p>
+
+                        <p>
+                            I also have some experience with Node.js, and MongoDB
+                        </p>
+
+                        <p>
+                            Would you like to know more? <br>
+                            Please check my <a href="#">LinkedIn</a> profile or just <a href="#">contact me</a>. 
+                        </p>
+                    </div>
+                    <div id="myCanvasContainer">
+                            <canvas width="400" height="400" id="myCanvas">
+                                <p>Anything in here will be replaced on browsers that support the canvas element</p>
+                                <ul>
+                                        <li><a href="http://www.google.com" target="_blank">HTML5</a></li>
+                                        <li><a href="/#">CSS3</a></li>
+                                        <li><a href="/chips">Javascript</a></li>
+                                        <li><a href="/salt">REST</a></li>
+                                        <li><a href="/vinegar">AJAX</a></li>
+                                        <li><a href="/vinegar">JSON</a></li>
+                                        <li><a href="/vinegar">XML</a></li>
+                                        <li><a href="/vinegar">Wordpress</a></li>
+                                        <li><a href="/vinegar">MySQL</a></li>
+                                        <li><a href="/vinegar">Node JS</a></li>
+                                        <li><a href="/vinegar">GitHub</a></li>
+                                        <li><a href="/vinegar">Bootstrap</a></li>
+                                        <li><a href="/vinegar">jQuery</a></li>
+                                        <li><a href="/vinegar">MongoDB</a></li>
+                                        <li><a href="/vinegar">npm</a></li>
+                                       </ul>
+                            </canvas>
+                    </div>
+                </div>
+        </section>
+
+        <section id="projects" class="section scrollspy">
+            <h3 class="page-title white-text teal">Projects</h3>
+            <div class="projects-container">
+                <div class="row">
+                    <div class="column"></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="section scrollspy">
+            <h3 class="page-title white-text teal">Testimonials</h3>
+            <div class="testimonials-container">
+                    <div class="testimonials-page">
+                        <div class="circle"></div>
+                        <i class="fas fa-quote-left"></i>
+                        <div class="test-desc">
+                            <div>
+                                    <p>
+                                            Shreyas Bhosale worked as Student IT consultant in the department 
+                                            of Mechanical Engineering at California State University, Fullerton. 
+                                            Shreyas always exhibits his good attitude, his willingness to help faculty,
+                                             staff, and students in our department. 
+                                             He gets along with everyone that he works with and he always 
+                                             shows his teamwork attitude to others. 
+                                             With his background in software programming and hardware designing,
+                                             he goes above and beyond to help other students in our department regarding
+                                             software and hardware usage.
+                                             I am confident that he will be the best asset to any place 
+                                             that he will associate or work.
+                                         </p>
+                            </div>
+                                     <div>
+                                        <hr>
+                                     </div>
+                        </div>
+                                
+                    </div>
+                        
+                    
+                    <div class="testimonials-page">
+                        <div class="circle"></div>
+                        <i class="fas fa-quote-left"></i>
+                        <div class="test-desc">
+                            <div>
+                                    <p>
+                                            It was a pleasure of working with Shreyas, 
+                                            it seldom happens that you come across a colleague like him. 
+                                            I had the privilege of working with Shreyas for a year at
+                                            Accenture Services Pvt Ltd, collaborating on a team project.
+                                            Shreyas's ability to think in multiple dimensions was unlike 
+                                            any I've seen before and that made a great difference
+                                            to the productivity of our team.
+                                            His analytical skills, communication skills and 
+                                            command over the English language make him a great asset to have on-board.
+                                            </p>
+                            </div>
+                                        <div>
+                                            <hr>
+                                        </div>
+                        </div>
+                            
+                        
+                        
+                    </div>
+                    <div class="testimonials-page">
+                        <div class="circle"></div>
+                        <i class="fas fa-quote-left"></i>
+                        <div class="test-desc">
+                            <div>
+                                    <p>
+                                    I have had the privilege of knowing and working with Shreyas for nearly 1.5 years while at Accenture. 
+    
+                                    Shreyas joined our team as a fresh college graduate and up-skilling him as a Software developer was pretty easy as he is a quick learner. 
+                                    
+                                    Post the up-skilling program, he was always eager to get involved in all the team deliverables and played a key role for one of important client deliveries. 
+                                    
+                                    I was particularly impressed by Shreyas's ability to debug and troubleshoot any piece of code during maintenance phase of the project effortlessly. That skill often takes years to develop among software development professionals, but it seemed to come perfectly naturally to him.
+                                    
+                                    Apart from working as a software developer, Shreyas has always been eager to learn the newest of technologies and keep himself updated with market trends in technology.
+                                    
+                                    Personally, Shreyas is an amiable person with great sense of humor. I'm happy to have worked with him and sure that he will be an asset to any organization he works with going further.
+                                    </p>
+                                </div>
+                                <div>
+                                    <hr>
+                                </div>
+                        </div>
+                        
+                        
+                    </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section scrollspy">
+                <h3 class="page-title white-text teal">Contact</h3>
+                <div class="map-container">
+                        <div style="text-align:center">
+                          <h2>Find me here...</h2>
+                          <p>Swing by for a cup of coffee, or leave me a message:</p>
+                        </div>
+                        <div class="map-row">
+                          <div class="map-column">
+                            <div id="map" style="width:100%;height:500px"></div>
+                          </div>
+                          <div class="map-column">
+                                <div class="box">
+                                        <h2>Keep In Touch...</h2>
+                                        <form method="POST" name="myemailform" action="contactForm.php">
+                                            <div class="inputBox">
+                                                <input type="text" name="firstname" required="">
+                                                <label>First Name:</label>
+                                            </div>
+                                            <div class="inputBox">
+                                                    <input type="text" name="lastname" required="">
+                                                    <label>Last Name:</label>
+                                            </div>
+                                            <div class="inputBox">
+                                                    <input type="text" name="email" required="">
+                                                    <label>Email:</label>
+                                            </div>
+                                            <div class="inputBox">
+                                                    <label for="subject">Message</label>
+                                                    <textarea id="subject" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                                            </div>
+                                                <input type="submit" name="submit" value="Submit">
+                                        </form>
+                                
+                                    </div>
+                            </div>
+                        </div>
+                </div>
+        </section>
+                <div class="footer">
+                    <div class="footer-container">&copy;Shreyas Bhosale</div>
+                </div>
+
+                <script>
+                    // Initialize google maps
+                    function myMap() {
+                        var myCenter = new google.maps.LatLng(33.841510899999996,-118.1754358);
+                        var mapCanvas = document.getElementById("map");
+                        var mapOptions = {center: myCenter, zoom: 12};
+                        var map = new google.maps.Map(mapCanvas, mapOptions);
+                        var marker = new google.maps.Marker({position:myCenter});
+                        marker.setMap(map);
+                    }
+                </script>
+            
+                <script
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2o1cK7vEHKVF_uGFxZDOqpiEz8e1ZBL4&callback=myMap">
+                </script>
+        
+    </main>
+    
+</body>
+</html>
