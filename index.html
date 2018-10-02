@@ -38,7 +38,7 @@
 <body>
     <main>
             
-        <div class="main-container">
+        <div class="banner-container">
             
                 <video autoplay loop id="video-background"  muted plays-inline>
                         <source src="bgvideo.mp4" type="video/mp4">
@@ -49,21 +49,21 @@
 
                     <div class="social">
                             <ul>
-                                <li><a href="#"></a><i class="fab fa-linkedin-in"></i></li>
-                                <li><a href="#"></a><i class="fab fa-github-alt"></i></li>
+                                <li><a class= "btn" href="https://www.linkedin.com/in/shreyas-bhosale" target="_blank"><i class="fab fa-linkedin-in"></i></li></a>
+                                <li><a href="https://www.github.com/shreyasb07" target="_blank"><i class="fab fa-github-alt"></i></li> </a>
                             </ul>
                     </div>
                     
                     <div class="actions">
                         <ul>
-                            <li><a href="#"></a><i class="fas fa-paper-plane"></i></li>
-                            <li><a href="#"></a><i class="fas fa-download"></i></li>
+                            <li><a href="mailto://shreyas@bhosale.co"><i class="fas fa-paper-plane"></i></li></a>
+                            <li><a href="Resume_ShreyasBhosale.pdf" target="_blank"><i class="fas fa-download"></i></li></a>
                         </ul>
                         
                     </div>
             </div>
             <div class="overlay"></div>
-            <div class="landing-text-container">
+            <div class="banner-text-container">
                 <h1 class="headline line anim-typewriter">LET'S BUILD SOMETHING <br>
                     AMAZING TOGETHER!</h1>
                     <p class="line anim-typewriter">
@@ -72,30 +72,32 @@
                     
             </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">About <span><i class="fas fa-user"></i></span><span></span></a></li>
-                <li><a href="#">Education <span><i class="fas fa-user-graduate"></i></span><span></span></a></li>
-                <li><a href="#">Experiences <span><i class="fas fa-chart-line"></i></span><span></span></a></li>
-                <li><a href="#">Skills <span><i class="fas fa-cogs"></i></span><span></span></a></li>
-                <li><a href="#">Testimonials <span><i class="fas fa-comments"></i></span><span></span></a></li>
-                <li><a href="#">Projects <span><i class="fas fa-folder-open"></i></span><span></span></a></li>
-                <li><a href="#">Contact <span><i class="fas fa-envelope"></i></span><span></span></a></li>
+        <!-- NavBar starts -->
+        <nav id="nav_bar">
+            <ul class="nav_links">
+                <li class="about-scroll"> About <span><i class="fas fa-user"></i></span><span></span></li>
+                <li class="experience-scroll">Experiences <span><i class="fas fa-chart-line"></i></span><span></span></li>
+                <li class="skills-scroll">Skills <span><i class="fas fa-cogs"></i></span><span></span></li>
+                <li class="projects-scroll">Projects <span><i class="fas fa-folder-open"></i></span><span></span></li>
+                <li class="testimonials-scroll">Testimonials <span><i class="fas fa-comments"></i></span><span></span></li>
+                <li class="contact-scroll">Contact <span><i class="fas fa-envelope"></i></span><span></span></li>
             </ul>
         </nav>
 
-        <section id="intro" class="section">
-            <div class="overlay"></div>
-            <div class="intro-container">
-                <h2>
-                    "I want to 
-                    <span class="teal">make things</span>
-                    <br>
-                    that 
-                    <span class="underline">make a difference"</span>
-                </h2>
-            </div>
-        </section>
+    <section id="intro" class="section">
+        <div class="intro-container">
+            
+            <h2>
+                "I want to 
+                <span class="teal">make things</span>
+                <br>
+                that 
+                <span class="underline">make a difference"</span>
+            </h2>
+        </div>
+    </section>
+
+        
         <section id="about" class="section scrollspy">
             <h3 class="page-title white-text teal">About</h3>
             <div class="about-page">
@@ -253,14 +255,135 @@
 
         <section id="projects" class="section scrollspy">
             <h3 class="page-title white-text teal">Projects</h3>
+            <!--Projects -->
             <div class="projects-container">
                 <div class="row">
-                    <div class="column"></div>
-                    <div class="column"></div>
-                    <div class="column"></div>
-                    <div class="column"></div>
-                    <div class="column"></div>
-                    <div class="column"></div>
+                    <div class="column">
+                        <div class="proj-img-container">
+                            <img src="bg1.jpg" alt="">
+                        </div>
+                        <div class="proj-link-container">
+                            <ul>
+                                <li>
+                                        <a href="#">
+                                                <i class="fas fa-eye"></i>View Project
+                                        </a>
+                                </li>
+                                <li>
+                                        <a href="#">
+                                                <i class="fab fa-github"></i>View on GitHub
+                                        </a>
+                                </li>
+                            </ul>
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="column">
+                            <div class="proj-img-container">
+                                    <img src="bg1.jpg" alt="">
+                                </div>
+                                <div class="proj-link-container">
+                                    <ul>
+                                        <li>
+                                                <a href="#">
+                                                        <i class="fas fa-eye"></i>View Project
+                                                </a>
+                                        </li>
+                                        <li>
+                                                <a href="#">
+                                                        <i class="fab fa-github"></i>View on GitHub
+                                                </a>
+                                        </li>
+                                    </ul>
+                                    
+                                    
+                                </div>
+                    </div>
+                    <div class="column">
+                            <div class="proj-img-container">
+                                    <img src="bg1.jpg" alt="">
+                                </div>
+                                <div class="proj-link-container">
+                                    <ul>
+                                        <li>
+                                                <a href="#">
+                                                        <i class="fas fa-eye"></i>View Project
+                                                </a>
+                                        </li>
+                                        <li>
+                                                <a href="#">
+                                                        <i class="fab fa-github"></i>View on GitHub
+                                                </a>
+                                        </li>
+                                    </ul>
+                                    
+                                    
+                                </div>
+                    </div>
+                    <div class="column">
+                            <div class="proj-img-container">
+                                    <img src="bg1.jpg" alt="">
+                                </div>
+                                <div class="proj-link-container">
+                                    <ul>
+                                        <li>
+                                                <a href="#">
+                                                        <i class="fas fa-eye"></i>View Project
+                                                </a>
+                                        </li>
+                                        <li>
+                                                <a href="#">
+                                                        <i class="fab fa-github"></i>View on GitHub
+                                                </a>
+                                        </li>
+                                    </ul>
+                                    
+                                    
+                                </div>
+                    </div>
+                    <div class="column">
+                            <div class="proj-img-container">
+                                    <img src="bg1.jpg" alt="">
+                                </div>
+                                <div class="proj-link-container">
+                                    <ul>
+                                        <li>
+                                                <a href="#">
+                                                        <i class="fas fa-eye"></i>View Project
+                                                </a>
+                                        </li>
+                                        <li>
+                                                <a href="#">
+                                                        <i class="fab fa-github"></i>View on GitHub
+                                                </a>
+                                        </li>
+                                    </ul>
+                                    
+                                    
+                                </div>
+                    </div>
+                    <div class="column">
+                            <div class="proj-img-container">
+                                    <img src="bg1.jpg" alt="">
+                                </div>
+                                <div class="proj-link-container">
+                                    <ul>
+                                        <li>
+                                                <a href="#">
+                                                        <i class="fas fa-eye"></i>View Project
+                                                </a>
+                                        </li>
+                                        <li>
+                                                <a href="#">
+                                                        <i class="fab fa-github"></i>View on GitHub
+                                                </a>
+                                        </li>
+                                    </ul>
+                                    
+                                    
+                                </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -269,7 +392,9 @@
             <h3 class="page-title white-text teal">Testimonials</h3>
             <div class="testimonials-container">
                     <div class="testimonials-page">
-                        <div class="circle"></div>
+                        <div class="circle">
+                            <img src="avatar-thao.png" alt="">
+                        </div>
                         <i class="fas fa-quote-left"></i>
                         <div class="test-desc">
                             <div>
@@ -296,21 +421,20 @@
                         
                     
                     <div class="testimonials-page">
-                        <div class="circle"></div>
+                            <div class="circle">
+                                    <img src="avatar-sonal.png" alt="">
+                                </div>
                         <i class="fas fa-quote-left"></i>
                         <div class="test-desc">
                             <div>
                                     <p>
-                                            It was a pleasure of working with Shreyas, 
-                                            it seldom happens that you come across a colleague like him. 
-                                            I had the privilege of working with Shreyas for a year at
-                                            Accenture Services Pvt Ltd, collaborating on a team project.
-                                            Shreyas's ability to think in multiple dimensions was unlike 
-                                            any I've seen before and that made a great difference
-                                            to the productivity of our team.
-                                            His analytical skills, communication skills and 
-                                            command over the English language make him a great asset to have on-board.
-                                            </p>
+                                    I have had the privilege of knowing and working with Shreyas for nearly 1.5 years while at Accenture.    
+                                    Shreyas joined our team as a fresh college graduate and up-skilling him as a Software developer was pretty easy as he is a quick learner.                                             
+                                    Post the up-skilling program, he was always eager to get involved in all the team deliverables and played a key role for one of important client deliveries. 
+                                    I was particularly impressed by Shreyas's ability to debug and troubleshoot any piece of code during maintenance phase of the project effortlessly. That skill often takes years to develop among software development professionals, but it seemed to come perfectly naturally to him.
+                                    Apart from working as a software developer, Shreyas has always been eager to learn the newest of technologies and keep himself updated with market trends in technology.                                            
+                                    Personally, Shreyas is an amiable person with great sense of humor. I'm happy to have worked with him and sure that he will be an asset to any organization he works with going further.      
+                                    </p>
                             </div>
                                         <div>
                                             <hr>
@@ -321,22 +445,21 @@
                         
                     </div>
                     <div class="testimonials-page">
-                        <div class="circle"></div>
+                            <div class="circle">
+                                    <img src="avatar-eshan2.png"  style = "zoom: 20%" alt="">
+                                </div>
                         <i class="fas fa-quote-left"></i>
                         <div class="test-desc">
                             <div>
-                                    <p>
-                                    I have had the privilege of knowing and working with Shreyas for nearly 1.5 years while at Accenture. 
-    
-                                    Shreyas joined our team as a fresh college graduate and up-skilling him as a Software developer was pretty easy as he is a quick learner. 
-                                    
-                                    Post the up-skilling program, he was always eager to get involved in all the team deliverables and played a key role for one of important client deliveries. 
-                                    
-                                    I was particularly impressed by Shreyas's ability to debug and troubleshoot any piece of code during maintenance phase of the project effortlessly. That skill often takes years to develop among software development professionals, but it seemed to come perfectly naturally to him.
-                                    
-                                    Apart from working as a software developer, Shreyas has always been eager to learn the newest of technologies and keep himself updated with market trends in technology.
-                                    
-                                    Personally, Shreyas is an amiable person with great sense of humor. I'm happy to have worked with him and sure that he will be an asset to any organization he works with going further.
+                                    <p>It was a pleasure of working with Shreyas, 
+                                            it seldom happens that you come across a colleague like him. 
+                                            I had the privilege of working with Shreyas for a year at
+                                            Accenture Services Pvt Ltd, collaborating on a team project.
+                                            Shreyas's ability to think in multiple dimensions was unlike 
+                                            any I've seen before and that made a great difference
+                                            to the productivity of our team.
+                                            His analytical skills, communication skills and 
+                                            command over the English language make him a great asset to have on-board.
                                     </p>
                                 </div>
                                 <div>
@@ -391,6 +514,56 @@
                 <div class="footer">
                     <div class="footer-container">&copy;Shreyas Bhosale</div>
                 </div>
+                <script>
+                    
+                    $(document).ready(function() {
+                        var sticky = document.getElementById("nav_bar").offsetTop;
+                        
+                        $(window).scroll(function () {
+                            //if you hard code, then use console.log to determine when you want the 
+                            //nav bar to stick.  
+                            
+                        
+                            if ($(window).scrollTop() >= sticky) {
+                                //console.log('here');
+                                $('#nav_bar').css({
+                                    'position': 'fixed',
+                                    'top': 0,
+                                    'z-index': 20,
+                                    'bottom': 'auto'
+                                });
+                            }
+                            else{
+                                $('#nav_bar').css({
+                                    'position': 'relative',
+                                    'margin': 0})
+                            }
+                            
+                        
+                        });
+                    });
+                </script> 
+
+<!-- <script>
+        window.onscroll = function() {myFunction()};
+        
+        // var navbar = document.getElementById("navbar");
+        var sticky = document.getElementById("nav_bar").offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            console.log('here');
+                                $('#nav_bar').css({
+                                    'position': 'fixed',
+                                    'top': 0,
+                                    'z-index': 100,
+                                    'bottom': 'auto'
+                                });
+          } else {
+            // navbar.classList.remove("sticky");
+          }
+        }
+        </script> -->
 
                 <script>
                     // Initialize google maps
@@ -407,7 +580,18 @@
                 <script
                     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2o1cK7vEHKVF_uGFxZDOqpiEz8e1ZBL4&callback=myMap">
                 </script>
-        
+        <script>
+            $("nav ul li").click(function() {
+        var myClass = this.className;
+        var myID = myClass.split('-')[0];
+        console.log(myID)
+        var height = document.getElementById(myID).offsetTop -90;
+        console.log(height);
+        $('html, body').animate({
+                scrollTop: height
+              }, 800);
+            });
+        </script>
     </main>
     
 </body>
